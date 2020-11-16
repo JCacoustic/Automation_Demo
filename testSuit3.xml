@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test suit by package level" verbose="1" parallel="methods" thread-count="2">
+    <test name="testsuit3">
+        <groups>
+            <run>
+                <include name="group1"></include>
+            </run>
+        </groups>
+
+        <classes>
+            <class name="com.tests.demo1.Test1"></class>
+            <class name="com.tests.demo1.Test2"></class>
+            <class name="com.tests.demo2.Test3"></class>
+        </classes>
+    </test>
+</suite>
